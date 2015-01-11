@@ -13,6 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
+  host: localhost
   username: root
   password: password
   socket: /var/lib/mysql/mysql.sock
@@ -51,4 +52,5 @@ production:
   <<: *default
   database: toy_app_production
 #  username: toy_app
+  username: root
 #  password: <%= ENV['TOY_APP_DATABASE_PASSWORD'] %>
